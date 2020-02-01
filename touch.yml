@@ -1,0 +1,10 @@
+---
+- hosts: web
+  tasks:
+   -  name: craeting a file
+      file:
+        path: /opt/newfile
+        state: touch
+        owner: root
+        group: root
+        mode: 0666
